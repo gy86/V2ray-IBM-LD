@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
   repository_dispatch:
   schedule:
-    - cron: 0 3 * * *
+    - cron: 0 4 * * *
 
 jobs:
   deploy:
@@ -140,5 +140,4 @@ jobs:
 
     - name: Deploy Cloud Foundry App
       run: cf push
- 
- 
+      
